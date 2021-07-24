@@ -19,7 +19,7 @@
       "type": "cosmosDB",
       "direction": "in",
       "name": "openTasks",
-      "databaseName": "todo-cosmos-sql-db",
+      "databaseName": "%DB_NAME%",
       "collectionName": "todo-tasks",
       "sqlQuery": "SELECT c.id, c.description, c.dueDate FROM c WHERE  NOT IS_DEFINED(c.completedDate) OR c.completedDate = null",
       "connectionStringSetting": "holitodoappdb_DOCUMENTDB"
