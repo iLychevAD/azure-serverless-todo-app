@@ -1,18 +1,24 @@
 {
   "name": "functions",
   "author": "Leon Fausten",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "todo-app",
   "scripts": {
-    "build": "tsc",
+    "build": "run-s build:compile build:zip",
+    "prebuild:zip": "mkdirp --mode=0700 build",
+    "build:zip": "jszip-cli",
+    "build:compile": "tsc",
     "watch": "tsc -w",
     "prestart": "npm run build",
-    "start": "func start",
+    "start": "func start  --typescript",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {},
   "devDependencies": {
     "@azure/functions": "^1.2.3",
-    "typescript": "^4.0.0"
+    "typescript": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "@ffflorian/jszip-cli": "^3.0.2",
+    "mkdirp": "^0.5.1"
   }
 }
