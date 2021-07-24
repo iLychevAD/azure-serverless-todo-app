@@ -220,3 +220,6 @@ dist
 .pnp.*
 
 local.settings.json
+
+src/main/functions/build
+.terraform.lock.hcl
