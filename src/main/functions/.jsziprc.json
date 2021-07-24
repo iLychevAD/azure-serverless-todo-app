@@ -1,0 +1,22 @@
+{
+    "compressionLevel": 3,
+    "dereferenceLinks": true,
+    "entries": [
+        "."
+    ],
+
+    "force": true,
+    "ignoreEntries": [
+        ".terraform",
+        "build",
+        "*.zip",
+        "*.map",
+        "terraform.*",
+        "*.tf"
+    ],
+    "mode": "add",
+    "outputEntry": "build/app-130.zip",
+    "quiet": false,
+    "verbose": false
+}
+
